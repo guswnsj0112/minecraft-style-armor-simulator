@@ -1,0 +1,58 @@
+.Steve {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+	box-sizing: border-box;
+}
+.Head {
+	width: 80px;
+	height: 80px;
+	background-color: black;
+}
+
+.Body {
+	width: 200px;
+	height: 150px;
+	background-color: green;
+	/* 여기에 Flexbox 속성 추가 */
+	display: flex; /* Flexbox 컨테이너로 만듭니다. */
+	justify-content: space-between; /* 자식 요소들 사이에 균등한 공간을 배분합니다. */
+	align-items: flex-start; /* 교차축(여기서는 수직)의 시작점에 정렬합니다. 팔의 윗부분을 맞춥니다. */
+	position: relative; /* 자식 요소의 absolute 포지셔닝을 위한 기준을 설정합니다. */
+}
+.LeftArm{
+	width: 2px;
+	height: 100px;
+	background-color: black;
+	/* 마진 대신 absolute 포지셔닝 사용 */
+	position: absolute; /* .Body를 기준으로 절대 위치를 설정합니다. */
+	left: 30px; /* 왼팔의 가로 위치를 조정합니다. */
+	top: 0; /* 왼팔의 세로 위치를 .Body의 상단에 맞춥니다. */
+}
+.RightArm{
+	width: 2px;
+	height: 100px;
+	background-color: black;
+    /* 마진 대신 absolute 포지셔닝 사용 */
+	position: absolute; /* .Body를 기준으로 절대 위치를 설정합니다. */
+	right: 30px; /* 오른팔의 가로 위치를 조정합니다. */
+	top: 0; /* 오른팔의 세로 위치를 .Body의 상단에 맞춥니다. */
+}
+
+
+.Leg {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	position: relative;
+}
+
+.centerLine {
+	width: 2px;
+	height: 150px;
+	background-color: black;
+	margin-top: 10px;
+	margin-left: 100px;
+	position: absolute;
+}
