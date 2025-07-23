@@ -77,4 +77,5 @@ npm run dev
 
 📧 문의: [guswnsj0112@naver.com]
 🐱 깃허브: github.com/guswnsj0112
+📝 블로그: https://joon0112.tistory.com/
 
