@@ -1,0 +1,55 @@
+.Steve {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+	box-sizing: border-box;
+}
+.Head {
+	width: 80px;
+	height: 80px;
+	background-color: black;
+}
+
+.Body {
+	width: 200px;
+	height: 150px;
+	background-color: green;
+	display: flex; 
+	justify-content: space-between; 
+	align-items: flex-start; 
+	position: relative; 
+}
+.LeftArm{
+	width: 2px;
+	height: 100px;
+	background-color: black;
+	position: absolute; 
+	left: 30px; 
+	top: 0; 
+}
+.RightArm{
+	width: 2px;
+	height: 100px;
+	background-color: black;
+	position: absolute;
+	right: 30px; 
+	top: 0; 
+}
+
+
+.Leg {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	position: relative;
+}
+
+.centerLine {
+	width: 2px;
+	height: 150px;
+	background-color: black;
+	margin-top: 10px;
+	margin-left: 100px;
+	position: absolute;
+}
