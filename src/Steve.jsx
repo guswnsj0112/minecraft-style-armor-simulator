@@ -31,38 +31,25 @@ export default function Steve(){
 		return update;
 		});
 	};
-	const changeHead = () => {
+	const changeMineral = (part) => {
 	setArmors(prev => ({
 			...prev,
-			head: minerals[randIdx(minerals)],
+			[part]: minerals[randIdx(minerals)],
 		}))
 	};
-	const changeBody = () => {
-	setArmors(prev => ({
-			...prev,
-			body: minerals[randIdx(minerals)],
-		}))
-	};
-	const changeLeg = () => {
-	setArmors(prev => ({
-			...prev,
-			leg: minerals[randIdx(minerals)],
-		}))
-	};
-
 	return (
 		<div className="Steve">
 			<div className="Head">
-				<HeadArmor changeMineral={changeHead} setColor={mineralToHex(armors.head)} />
+				<HeadArmor changeMineral={() => changeMineral('head')} setColor={mineralToHex(armors.head)} />
 			</div>
 			<div className="Body">
 				<div className="LeftArm"></div>
 				<div className="RightArm"></div>
-				<BodyArmor changeMineral={changeBody} setColor={mineralToHex(armors.body)} />
+				<BodyArmor changeMineral={() => changeMineral('body')} setColor={mineralToHex(armors.body)} />
 			</div>
 			<div className="Leg">
 				<div className="centerLine"></div>
-				<LegArmor changeMineral={changeLeg} setColor={mineralToHex(armors.leg)} />
+				<LegArmor changeMineral={() => changeMineral('leg')} setColor={mineralToHex(armors.leg)} />
 			</div>
 			<button onClick={allChange} >allChange</button>
 			<button onClick={reset}>Reset</button>
