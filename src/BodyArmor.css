@@ -2,3 +2,20 @@
 	width: 100%;
 	height: 90%;
 }
+
+.LeftArm{
+	transform: rotate(40deg);
+    position: absolute;
+    background-color: green;
+    width: 30px;
+    height: 150px;
+    right: 200px;
+}
+.RightArm{
+	transform: rotate(140deg);
+    position: absolute;
+    background-color: green;
+    width: 30px;
+    height: 150px;
+    left: 200px;
+}

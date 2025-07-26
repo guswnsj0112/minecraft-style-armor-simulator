@@ -43,12 +43,9 @@ export default function Steve(){
 				<HeadArmor changeMineral={() => changeMineral('head')} setColor={mineralToHex(armors.head)} />
 			</div>
 			<div className="Body">
-				<div className="LeftArm"></div>
-				<div className="RightArm"></div>
 				<BodyArmor changeMineral={() => changeMineral('body')} setColor={mineralToHex(armors.body)} />
 			</div>
 			<div className="Leg">
-				<div className="centerLine"></div>
 				<LegArmor changeMineral={() => changeMineral('leg')} setColor={mineralToHex(armors.leg)} />
 			</div>
 			<button onClick={allChange} >allChange</button>
