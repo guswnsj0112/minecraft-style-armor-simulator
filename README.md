@@ -3,7 +3,8 @@ React의 `useState` 훅과 상태 관리의 기본 개념을 연습하기 위해
 사용자는 버튼 클릭을 통해 무작위로 Steve 캐릭터의 장비(머리, 몸통, 다리)를 변경할 수 있습니다.
 
 ## 📸 미리보기
-<img width="609" height="647" alt="capture" src="https://github.com/user-attachments/assets/9a0c38d8-ed75-4c52-9971-92fb97f250f9" />
+
+[!미리보기 사진]<img width="702" height="627" alt="r" src="https://github.com/user-attachments/assets/9d3c9c03-184d-4d62-b3d8-9bde629832d9" />
 
 
 ---
